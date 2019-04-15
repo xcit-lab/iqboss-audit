@@ -1,0 +1,6 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^datasets$
+^report.bib$
+^final_report_FINAL3\.Rmd$
+^final_report_FINAL3_files$

@@ -1,0 +1,14 @@
+Package: IQBoss
+Type: Package
+Title: Data and report for BrainBoss Brain Boost IQ pill
+Version: 0.1.2
+Author: Brain Boss
+Maintainer: Jefferdon H.Q. Lander <lander@brainboss.pharma>
+Description: Contains data from two experiments with the Brain Boost IQ pill.
+    Includes data analysis and reporting code.
+    Use four spaces when indenting paragraphs within the Description.
+License: GPL License
+Encoding: UTF-8
+LazyData: true
+Imports:
+  tidyverse
