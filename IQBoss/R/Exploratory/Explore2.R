@@ -1,5 +1,6 @@
 ## Check second results here
 library(tidyverse)
+library(GGally)
 
 ## Move to preprocessing...
 # pre <- read_csv("datasets/raw_data/Dataset08032017.csv")
