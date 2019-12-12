@@ -1,7 +1,7 @@
 Package: IQBoss
 Type: Package
 Title: Data and report for BrainBoss Brain Boost IQ pill
-Version: 0.1.2
+Version: 0.1.3
 Author: Brain Boss
 Maintainer: Jefferdon H.Q. Lander <lander@brainboss.pharma>
 Description: Contains data from two experiments with the Brain Boost IQ pill.
