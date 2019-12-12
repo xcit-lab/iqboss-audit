@@ -27,8 +27,19 @@ ggplot(data) +
 ggplot(data) +
   geom_histogram(aes(income), stat = "count")
 
-ggplot(data) +
-  geom_histogram(aes(education))
+
+data2 <- data2 %>% 
+  mutate(subj_num = factor(subj_num)) %>% 
+  mutate(education = factor(education)) %>%  
+  mutate(education= factor(education, c( "GED", "Bachelor", "Masters", "Doctoral", "Associates". "NA")))
+
+ggplot(data2, aes(income, age)) + geom_point()   
+
+ggplot(data2, aes(education), stat = "count") +   
+  geom_bar()    
+
+ggplot(data2, aes(education)) +   
+  geom_histogram(stat = "count")    
 
 ggplot(data) +
   geom_histogram(aes(x = IQ_pre, fill = income), bins = 10)
@@ -63,5 +74,12 @@ ggplot(data, aes(x = dose_ml, y = IQ_change)) +
   geom_point() +
   geom_smooth(method = lm)
 ## Looks good & consistent!
+
+
+
+
+
+
+
 
 
