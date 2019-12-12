@@ -33,9 +33,10 @@ ggplot(data) +
 ggplot(data) +
   geom_histogram(aes(x = IQ_pre, fill = income), bins = 10)
 
-ggplot(data) +
-  geom_point(aes(x = age)) +
-  facet_wrap(.~education)
+ggplot(data, aes(x = age, y=education)) +
+  geom_point() +
+   facet_wrap(.~education)
+
 
 # check impact:
 data <- data %>%
@@ -63,5 +64,9 @@ ggplot(data, aes(x = dose_ml, y = IQ_change)) +
   geom_point() +
   geom_smooth(method = lm)
 ## Looks good & consistent!
+
+str(data)
+
+
 
 
